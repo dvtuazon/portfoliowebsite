@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-dark {
+  background-color: #000000;
+}
+
+body {
+  background-color: grey;
+  background-image: url(techybg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
