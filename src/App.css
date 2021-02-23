@@ -45,7 +45,8 @@ body {
   background-color: grey;
   background-image: url(techybg.jpg);
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  font-family: 'Consolas';
 }
 
 h1 {
@@ -61,4 +62,22 @@ h1 {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button:visited {
+  border: inherit;
+}
+
+#name {
+  transition: ease-in-out .2s all;
 }

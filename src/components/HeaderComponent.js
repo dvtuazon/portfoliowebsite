@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron, NavLink } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 
 class Header extends Component {
     constructor(props) {
@@ -26,12 +26,12 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">
-                                <NavLink className="nav-link px-3" to="/contact">
-                                    <i className="fa fa-envelope fa-lg" /> dvtuazon@gmail.com
-                                </NavLink>
-                                <NavLink className="nav-link px-3">
-                                    <i className="fa fa-github fa-lg" /> https://github.com/dvtuazon
-                                </NavLink>
+                                <NavItem className="nav-link px-3" to="/contact">
+                                    <i className="fa fa-envelope fa-lg" /> <a href="mailto:dvtuazon@gmail.com">dvtuazon@gmail.com</a>
+                                </NavItem>
+                                <a href="https://github.com/dvtuazon" target="_blank" className="nav-link px-3">
+                                    <i className="fa fa-github fa-lg" /> My GitHub
+                                </a>
                             </Nav>
                         </Collapse>
                     </Navbar>
