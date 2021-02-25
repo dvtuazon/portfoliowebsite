@@ -37,22 +37,9 @@
   }
 }
 
-.navbar-dark {
-  background-color: #000000;
-}
-
 body {
-  background-color: grey;
-  background-image: url(techybg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Consolas';
-}
-
-h1 {
-  font-size: 100px;
-  text-align: center;
-  color: white;
+  background-color: white;
+  font-family: 'Helvetica';
 }
 
 .center {
@@ -62,6 +49,13 @@ h1 {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.name {
+  color: black;
+  font-size: 50px;
+  text-decoration: inherit;
+  transition: ease-in-out .2s all;
 }
 
 a {
@@ -74,10 +68,6 @@ a:hover {
   text-decoration: inherit;
 }
 
-button:visited {
-  border: inherit;
-}
-
-#name {
-  transition: ease-in-out .2s all;
+.jumbotron {
+  background-color: white;
 }

@@ -10,12 +10,13 @@ class App extends Component {
         this.state = {
             title: 'David Tuazon',
             headerLinks: [
-                { title: 'Home', path: '/'},
+                { title: 'Work', path: '/'},
                 { title: 'About', path: '/about'},
-                { title: 'Contact', path: '/contact'}
+                { title: 'Contact', path: '/contact'},
+                { title: 'Resume', path: '/resume'}
             ],
             home: {
-                title: 'Lifelong Learning'
+                title: 'David Tuazon'
             }
         }
     }

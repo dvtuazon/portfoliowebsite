@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 
 class Header extends Component {
     constructor(props) {
@@ -19,19 +19,40 @@ class Header extends Component {
     }
 
     render() {
-        return(
+        return (
             <>
-                <Container className="p-0" fluid={true}>
-                    <Navbar className="border-bottom" dark sticky="top" expand="md">
+                <Container className="p-5" fluid={true}>
+                    <Navbar sticky="top" expand="md">
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar className="ml-auto">
-                                <NavItem className="nav-link px-3" to="/contact">
-                                    <i className="fa fa-envelope fa-lg" /> <a href="mailto:dvtuazon@gmail.com">dvtuazon@gmail.com</a>
-                                </NavItem>
-                                <a href="https://github.com/dvtuazon" target="_blank" className="nav-link px-3">
-                                    <i className="fa fa-github fa-lg" /> My GitHub
-                                </a>
+                            <Nav navbar>
+                                <div className="container-fluid">
+                                    <div className="row">
+                                        <NavbarBrand className="col">
+                                            <h1 className="name">David Tuazon</h1>
+                                        </NavbarBrand>
+                                        <NavItem>
+                                            <NavLink className="nav-link" to="/work">
+                                                Work
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className="nav-link" to="/about">
+                                                About
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className="nav-link" to="/contact">
+                                                Contact
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className="nav-link" to="/resume">
+                                                Resume
+                                            </NavLink>
+                                        </NavItem>
+                                    </div>
+                                </div>
                             </Nav>
                         </Collapse>
                     </Navbar>
