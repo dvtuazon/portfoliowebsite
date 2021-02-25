@@ -39,7 +39,7 @@
 
 body {
   background-color: white;
-  font-family: 'Helvetica';
+  font-family: 'Consolas';
 }
 
 .center {
@@ -70,4 +70,12 @@ a:hover {
 
 .jumbotron {
   background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.top-bar {
+  border-bottom: grey 1px solid;
 }

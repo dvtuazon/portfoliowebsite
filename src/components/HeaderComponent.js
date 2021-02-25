@@ -21,37 +21,38 @@ class Header extends Component {
     render() {
         return (
             <>
+                <Container fluid className="top-bar">
+                    David Tuazon
+                </Container>
                 <Container className="p-5" fluid={true}>
                     <Navbar sticky="top" expand="md">
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <div className="container-fluid">
-                                    <div className="row">
-                                        <NavbarBrand className="col">
-                                            <h1 className="name">David Tuazon</h1>
-                                        </NavbarBrand>
-                                        <NavItem>
-                                            <NavLink className="nav-link" to="/work">
-                                                Work
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className="nav-link" to="/about">
-                                                About
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className="nav-link" to="/contact">
-                                                Contact
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink className="nav-link" to="/resume">
-                                                Resume
-                                            </NavLink>
-                                        </NavItem>
-                                    </div>
+                                    <NavbarBrand>
+                                        <h1>David Tuazon</h1>
+                                    </NavbarBrand>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/work">
+                                            Work
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/about">
+                                            About
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/contact">
+                                            Contact
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/resume">
+                                            Resume
+                                        </NavLink>
+                                    </NavItem>
                                 </div>
                             </Nav>
                         </Collapse>
