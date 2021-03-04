@@ -21,9 +21,6 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Container fluid className="top-bar">
-                    David Tuazon
-                </Container>
                 <Container className="p-5" fluid={true}>
                     <Navbar sticky="top" expand="md">
                         <NavbarToggler onClick={this.toggleNav} />
