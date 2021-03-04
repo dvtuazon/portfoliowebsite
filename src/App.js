@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Main from './components/MainComponent';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
         this.state = {
             title: 'David Tuazon',
             headerLinks: [
-                { title: 'Work', path: '/'},
+                { title: 'Work', path: '/work'},
                 { title: 'About', path: '/about'},
                 { title: 'Contact', path: '/contact'},
                 { title: 'Resume', path: '/resume'}
@@ -22,9 +22,11 @@ class App extends Component {
     }
     render() {
         return (
-            <Router>
-                <Main />
-            </Router>
+            <BrowserRouter>
+                <div>
+                    <Main />
+                </div>
+            </BrowserRouter>
         );
     };
 }

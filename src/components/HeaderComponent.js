@@ -26,31 +26,29 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                                <div className="container-fluid">
-                                    <NavbarBrand>
-                                        <h1>David Tuazon</h1>
-                                    </NavbarBrand>
-                                    <NavItem>
-                                        <NavLink className="nav-link" to="/work">
-                                            Work
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className="nav-link" to="/about">
-                                            About
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className="nav-link" to="/contact">
-                                            Contact
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink className="nav-link" to="/resume">
-                                            Resume
-                                        </NavLink>
-                                    </NavItem>
-                                </div>
+                                <NavbarBrand>
+                                    <h1>David Tuazon</h1>
+                                </NavbarBrand>
+                                <NavItem>
+                                    <NavLink className="nav-link" href="/work">
+                                        Work
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" href="/about">
+                                        About
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" href="/contact">
+                                        Contact
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" href="/resume">
+                                        Resume
+                                    </NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </Navbar>

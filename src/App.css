@@ -79,3 +79,12 @@ h1 {
 .top-bar {
   border-bottom: grey 1px solid;
 }
+
+.nav-link {
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  text-decoration: underline solid rgb(91, 88, 255) 3px;
+}
