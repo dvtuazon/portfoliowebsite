@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { Container } from 'reactstrap'
 
 function Contact() {
-    return <h1>Contact</h1>
+    return (
+        <Container>
+            <h1>Contact</h1>
+        </Container>
+    )
 }
 
 export default Contact;

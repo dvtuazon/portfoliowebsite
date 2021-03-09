@@ -1,37 +1,28 @@
-import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import React, { useState } from 'react';
+import { Container, Col } from 'reactstrap';
 import { Nav, Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isNavOpen: false
-        };
+function Header() {
+    const [collapsed, setCollapsed] = useState(false);
 
-        this.toggleNav = this.toggleNav.bind(this);
-    }
-
-    toggleNav() {
-        this.setState({
-            isNavOpen: !this.state.isNavOpen
-        });
-    }
-
-    render() {
-        return (
-            <>
-                <Container className="p-5" fluid={true}>
-                    <Navbar sticky="top" expand="md">
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
-                                <NavbarBrand>
-                                    <h1>David Tuazon</h1>
-                                </NavbarBrand>
+    const toggleNavbar = () => setCollapsed(!collapsed);
+    
+    return (
+        <>
+            <Container className="p-5" fluid={true}>
+                <Navbar sticky="top" expand="md">
+                    <NavbarToggler onClick={toggleNavbar} className=" navbar-light" />
+                    <Collapse isOpen={collapsed} navbar>
+                        <Nav navbar>
+                            <Container>
+                                <Col>
                                 <NavItem>
-                                    <NavLink className="nav-link" href="/work">
-                                        Work
+                                    <h1 className="name">David Tuazon</h1>
+                                </NavItem>
+                                </Col>
+                                <NavItem>
+                                    <NavLink className="nav-link" href="/projects">
+                                        Projects
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -49,13 +40,13 @@ class Header extends Component {
                                         Resume
                                     </NavLink>
                                 </NavItem>
-                            </Nav>
-                        </Collapse>
-                    </Navbar>
-                </Container>
-            </>
-        )
-    }
+                            </Container>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </Container>
+        </>
+    )
 }
 
 export default Header;

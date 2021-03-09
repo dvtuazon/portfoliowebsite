@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container } from 'reactstrap';
 
-function Resume() {
+function Projects() {
     return (
         <Container>
-            <h1>Resume</h1>
+            <h1>Projects</h1>
         </Container>
     )
 }
 
-export default Resume;
+export default Projects;
