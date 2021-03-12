@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Col } from 'reactstrap';
 
 function Resume() {
     return (
         <Container>
-            <h1>Resume</h1>
+            <Col><h1>Resume</h1></Col>
         </Container>
     )
 }

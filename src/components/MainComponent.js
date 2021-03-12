@@ -19,7 +19,7 @@ function Main() {
                         <Route exact path='/about' render={() => <About />} />
                         <Route exact path='/contact' render={() => <Contact />}/*render={() => <Contact postFeedback={this.props.postFeedback} resetFeedbackForm={this.props.resetFeedbackForm} />}*/ />
                         <Route exact path='/resume' render={() => <Resume />} />
-                        <Redirect to='/work' />
+                        <Redirect to='/projects' />
                     </Switch>
                 </CSSTransition>
             </TransitionGroup>

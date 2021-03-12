@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Col } from 'reactstrap';
 
 function Projects() {
     return (
         <Container>
-            <h1>Projects</h1>
+            <Col><h1>Projects</h1></Col>
         </Container>
     )
 }

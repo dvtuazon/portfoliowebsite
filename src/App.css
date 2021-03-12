@@ -38,7 +38,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(46, 46, 46);
   font-family: 'Consolas';
 }
 
@@ -53,7 +53,7 @@ body {
 
 .name {
   color: black;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 a {
@@ -70,16 +70,57 @@ a:hover {
   background-color: white;
 }
 
-.top-bar {
-  border-bottom: grey 1px solid;
-}
-
 .nav-link {
-  margin-left: 20px;
   transition: ease-in-out .2s all;
+  color: rgb(128, 128, 128);
 }
 
 .nav-link:hover {
-  transform: translateY(-5px) scale(1.1);
-  text-decoration: underline solid rgb(91, 88, 255) 3px;
+  color: rgb(128, 128, 128);
+  transform: translateY(-5px) scale(1.25);
+  letter-spacing: .2rem;
+}
+
+.jumbotron {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.header {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.header-item {
+  font-size: 20px;
+}
+
+.typewriter {
+  background-color: rgb(32, 32, 32);
+}
+
+.typing-erase {
+  width: 0;
+  max-width: max-content;
+  overflow: hidden;
+  border-right: .05em solid #464545;
+  white-space: nowrap;
+  margin: 0;
+  animation: 4s typing-erase 4s steps(50, end) infinite, blink-caret .5s step-end infinite;
+}
+
+@keyframes typing-erase {
+  0% { width: 0 }
+  80% { width: 100% }
+  90%, 100% { width: 0 }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray }
+}
+
+.misc {
+  color: rgb(179, 116, 74)
 }
