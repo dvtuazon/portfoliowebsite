@@ -37,37 +37,14 @@
   }
 }
 
+html {
+  font-size: 1.5vw;
+}
+
 body {
   background-color: rgb(46, 46, 46);
   font-family: 'Consolas';
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.name {
-  color: black;
-  font-size: 70px;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.jumbotron {
-  background-color: white;
+  color: rgb(219, 219, 219);
 }
 
 .nav-link {
@@ -77,8 +54,7 @@ a:hover {
 
 .nav-link:hover {
   color: rgb(128, 128, 128);
-  transform: translateY(-5px) scale(1.25);
-  letter-spacing: .2rem;
+  transform: scale(1.2);
 }
 
 .jumbotron {
@@ -87,13 +63,15 @@ a:hover {
 }
 
 .header {
-  display: inline-block;
+  display: flex;
   text-align: center;
+  justify-content: center space-between;
   width: 100%;
 }
 
 .header-item {
-  font-size: 20px;
+  font-size: calc(10px + 1vw);
+  white-space: nowrap;
 }
 
 .typewriter {
@@ -121,6 +99,9 @@ a:hover {
   50% { border-color: gray }
 }
 
-.misc {
-  color: rgb(179, 116, 74)
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
