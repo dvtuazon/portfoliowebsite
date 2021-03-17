@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Col } from 'reactstrap';
 import { Nav, Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-const name = 'david tuazon'
+
 function Header() {
     const [collapsed, setCollapsed] = useState(false);
 
@@ -18,7 +18,7 @@ function Header() {
             </div>
             <Container fluid>
                 <Navbar sticky="top">
-                    <Nav navbar className="header">
+                    <Nav navbar className="header bg-dark">
                         <Container>
                             <Col xs="3">
                                 <NavItem>

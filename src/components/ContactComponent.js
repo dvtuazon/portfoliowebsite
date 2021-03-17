@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
-import { Container, Col } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 
 function Contact() {
     return (
         <Container>
-            <Col><h1>Contact</h1></Col>
+            <Row>
+                <Col><h1 className="title">Contact</h1></Col>
+            </Row> <br />
+            <Row>
+                Email:<a href="mailto:dvtuazon@gmail.com">dvtuazon@gmail.com</a>
+            </Row>
+            <Row>
+                GitHub:<a href="https://github.com/dvtuazon">Over here!</a>
+            </Row>
         </Container>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 function Projects() {
     return (

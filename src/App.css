@@ -98,10 +98,3 @@ body {
   from, to { border-color: transparent }
   50% { border-color: gray }
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
