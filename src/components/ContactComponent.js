@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap'
 
 function Contact() {
     return (
-        <Container>
+        <Container className="page-container">
             <Row>
                 <Col><h1 className="title">Contact</h1></Col>
             </Row> <br />

@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 function Resume() {
     return (
         <Container>
-            <Col><h1>Resume</h1></Col>
+            <Col><h1 className="title">Resume</h1></Col>
         </Container>
     )
 }

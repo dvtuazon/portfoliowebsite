@@ -21,11 +21,11 @@ function About() {
                 previously mentioned.
             </Row> <br />
             <Row>
-                I'm a believer of lifelong learning, and I will always want to expand 
-                my skillset. After bootcamp, learning other languages on my own is not 
-                as big of a stretch. My goal is to become flexible within the tech 
-                industry, and I'm confident that my hunger for knowledge will help me 
-                in that feat.
+                I'm a believer of lifelong learning and a naturally curious person, 
+                and I will always want to expand my skillset. After bootcamp, learning 
+                other languages on my own became easier. My goal is to become flexible 
+                within the tech industry, and I'm confident that my hunger for knowledge 
+                will help me in that feat.
             </Row>
         </Container>
     )

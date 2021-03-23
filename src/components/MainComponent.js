@@ -4,6 +4,7 @@ import Projects from './ProjectsComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
 import Resume from './ResumeComponent';
+import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -23,6 +24,7 @@ function Main() {
                     </Switch>
                 </CSSTransition>
             </TransitionGroup>
+            <Footer />
         </>
     )
 }

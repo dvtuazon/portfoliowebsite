@@ -38,7 +38,7 @@
 }
 
 html {
-  font-size: 1.5vw;
+  font-size: 16px;
 }
 
 body {
@@ -60,12 +60,13 @@ body {
 .jumbotron {
   padding-bottom: 20px;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 
 .header {
-  display: flex;
-  text-align: center;
-  justify-content: center space-between;
+  position: flex;
+  justify-content: center;
+  align-content: center;
   width: 100%;
 }
 
@@ -97,4 +98,35 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: gray }
+}
+
+.site-footer {
+  background-color: rgb(32, 32, 32);
+  padding: 20px 0;
+  position: sticky;
+  bottom:0;
+  width:100%;
+  margin-top: 100px;
+}
+
+.page-container {
+  position: relative;
+}
+
+.title {
+  background-color:rgb(32, 32, 32);
+  padding: 10px;
+}
+
+.footer-link {
+  color: rgb(219, 219, 219);
+}
+
+.footer-link:hover {
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+}
+
+.navbar-dark {
+  background-color: rgb(32, 32, 32);
 }
