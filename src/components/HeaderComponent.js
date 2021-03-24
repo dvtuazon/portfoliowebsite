@@ -22,28 +22,21 @@ function Header() {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav navbar className="header bg-dark">
                             <Row>
-                                <Col xs="12" md="3">
+                                <Col xs="12" md="4">
                                     <NavItem>
                                         <NavLink className="nav-link header-item text-center" href="/projects">
                                             &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
                                         </NavLink>
                                     </NavItem>
                                 </Col>
-                                <Col xs="12" md="3">
+                                <Col xs="12" md="4">
                                     <NavItem>
                                         <NavLink className="nav-link header-item text-center" href="/about">
                                             &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
                                         </NavLink>
                                     </NavItem>
                                 </Col>
-                                <Col xs="12" md="3">
-                                    <NavItem>
-                                        <NavLink className="nav-link header-item text-center" href="/contact">
-                                            &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Contact</span> /&#62;
-                                        </NavLink>
-                                    </NavItem>
-                                </Col>
-                                <Col xs="12" md="3">
+                                <Col xs="12" md="4">
                                     <NavItem>
                                         <NavLink className="nav-link header-item text-center" href="/resume">
                                             &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Resume</span> /&#62;

@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function About() {
     return (
         <Container>
             <Row>
-                <Col><h1 className="title">About Me</h1></Col>
+                <Breadcrumb className="breadcrumb">
+                    <BreadcrumbItem><Link to="/home" className="footer-link">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>About Me</BreadcrumbItem>
+                    <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
+                </Breadcrumb>
             </Row> <br />
             <Row>
                 Hello there! I'm David, an aspiring front end engineer. I mostly 

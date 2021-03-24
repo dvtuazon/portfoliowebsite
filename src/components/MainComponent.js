@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './HeaderComponent';
+import Home from './HomeComponent.js';
 import Projects from './ProjectsComponent';
 import About from './AboutComponent';
-import Contact from './ContactComponent';
 import Resume from './ResumeComponent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
@@ -16,11 +16,11 @@ function Main() {
             <TransitionGroup>
                 <CSSTransition /*key={this.props.location.key}*/ classNames="page" timeout={300}>
                     <Switch>
+                        <Route path='/home' render={() => <Home />} />
                         <Route path='/projects' render={() => <Projects />}/*component={HomePage}*/ />
                         <Route exact path='/about' render={() => <About />} />
-                        <Route exact path='/contact' render={() => <Contact />}/*render={() => <Contact postFeedback={this.props.postFeedback} resetFeedbackForm={this.props.resetFeedbackForm} />}*/ />
                         <Route exact path='/resume' render={() => <Resume />} />
-                        <Redirect to='/projects' />
+                        <Redirect to='/home' />
                     </Switch>
                 </CSSTransition>
             </TransitionGroup>

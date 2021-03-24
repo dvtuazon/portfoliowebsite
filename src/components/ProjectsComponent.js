@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Projects() {
     return (
         <Container>
-            <Col><h1 className="title">Projects</h1></Col>
+            <Row>
+                <Breadcrumb className="breadcrumb">
+                    <BreadcrumbItem><Link to="/home" className="footer-link">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Projects</BreadcrumbItem>
+                    <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
+                </Breadcrumb>
+            </Row>
         </Container>
     )
 }

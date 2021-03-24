@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function Resume() {
+function Home() {
     return (
         <Container>
             <Row>
                 <Breadcrumb className="breadcrumb">
-                    <BreadcrumbItem><Link to="/home" className="footer-link">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Resume</BreadcrumbItem>
-                    <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
+                    <BreadcrumbItem active>Home</BreadcrumbItem>
                 </Breadcrumb>
             </Row>
         </Container>
-    )
+    );
 }
 
-export default Resume;
+export default Home;
