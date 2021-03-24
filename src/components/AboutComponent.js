@@ -7,13 +7,13 @@ function About() {
         <Container>
             <Row>
                 <Breadcrumb className="breadcrumb">
-                    <BreadcrumbItem><Link to="/home" className="footer-link">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>About Me</BreadcrumbItem>
+                    <BreadcrumbItem><Link to="/home" className="link">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>About</BreadcrumbItem>
                     <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
                 </Breadcrumb>
             </Row> <br />
-            <Row>
-                Hello there! I'm David, an aspiring front end engineer. I mostly 
+            <Row className="row-content">
+                I'm David, an aspiring front end web developer. I mostly 
                 use JavaScript-based technologies such as React.js and React Native. 
                 Although I specialize in front end, I am familiar with Node.js, 
                 Express, and MongoDB, allowing me to create a back end as well.
@@ -26,7 +26,7 @@ function About() {
                 previously mentioned.
             </Row> <br />
             <Row>
-                I'm a believer of lifelong learning and a naturally curious person, 
+                I am a believer of lifelong learning and a naturally curious person, 
                 and I will always want to expand my skillset. After bootcamp, learning 
                 other languages on my own became easier. My goal is to become flexible 
                 within the tech industry, and I'm confident that my hunger for knowledge 

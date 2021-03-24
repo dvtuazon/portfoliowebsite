@@ -17,36 +17,39 @@ function Header() {
                 </h1>
             </div>
             <Navbar dark sticky="top" expand="md">
-                <Container fluid>
+                <Col>
                     <NavbarToggler onClick={toggleNavbar} className="navbar-dark" />
                     <Collapse isOpen={isOpen} navbar>
-                        <Nav navbar className="header bg-dark">
-                            <Row>
-                                <Col xs="12" md="4">
-                                    <NavItem>
-                                        <NavLink className="nav-link header-item text-center" href="/projects">
-                                            &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
-                                        </NavLink>
-                                    </NavItem>
-                                </Col>
-                                <Col xs="12" md="4">
-                                    <NavItem>
-                                        <NavLink className="nav-link header-item text-center" href="/about">
-                                            &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
-                                        </NavLink>
-                                    </NavItem>
-                                </Col>
-                                <Col xs="12" md="4">
-                                    <NavItem>
-                                        <NavLink className="nav-link header-item text-center" href="/resume">
-                                            &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Resume</span> /&#62;
-                                        </NavLink>
-                                    </NavItem>
-                                </Col>
-                            </Row>
+                        <Nav navbar className="header">
+                            <Col xs="12" md="4">
+                                <NavItem>
+                                    <NavLink className="nav-link header-item text-center" href="/projects">
+                                        &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
+                                    </NavLink>
+                                </NavItem>
+                            </Col>
+                            <Col xs="12" md="4">
+                                <NavItem>
+                                    <NavLink className="nav-link header-item text-center" href="/about">
+                                        &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
+                                    </NavLink>
+                                </NavItem>
+                            </Col>
+                            <Col xs="12" md="4">
+                                <NavItem>
+                                    <NavLink className="nav-link header-item text-center" href="/resume">
+                                        &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Resume</span> /&#62;
+                                    </NavLink>
+                                </NavItem>
+                            </Col>
                         </Nav>
                     </Collapse>
-                </Container>
+                </Col>
+                <Col>
+                    <Nav>
+                        <NavItem className="ml-auto">Lifelong Learning</NavItem>
+                    </Nav>
+                </Col>
             </Navbar>
         </>
     )

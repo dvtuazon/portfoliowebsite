@@ -7,7 +7,7 @@ function Projects() {
         <Container>
             <Row>
                 <Breadcrumb className="breadcrumb">
-                    <BreadcrumbItem><Link to="/home" className="footer-link">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem><Link to="/home" className="link">Home</Link></BreadcrumbItem>
                     <BreadcrumbItem active>Projects</BreadcrumbItem>
                     <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
                 </Breadcrumb>
