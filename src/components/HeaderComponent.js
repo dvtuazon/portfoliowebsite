@@ -9,13 +9,13 @@ function Header() {
     
     return (
         <>
-            <div className="jumbotron jumbotron-fluid typewriter">
+            <Jumbotron fluid className="typewriter">
                 <h1 className="name typing-erase pl-2">
                     <span style={{ color: 'rgb(64, 130, 161)' }}>const</span>
                     <span style={{ color: 'rgb(46, 92, 114)' }}> name</span> <span style={{ color: 'rgb(219, 219, 219);' }}> =</span>
                     <span style={{ color: 'rgb(179, 116, 74)' }}> 'David Tuazon'</span><span style={{ color: 'rgb(219, 219, 219)' }}>;</span>
                 </h1>
-            </div>
+            </Jumbotron>
             <Navbar dark sticky="top" expand="md">
                 <Col>
                     <NavbarToggler onClick={toggleNavbar} className="navbar-dark" />

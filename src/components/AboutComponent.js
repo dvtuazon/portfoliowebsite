@@ -12,25 +12,31 @@ function About() {
                     <Link to="/home" className="close-btn"><i className="fa fa-times fa-lg ml-3" /></Link>
                 </Breadcrumb>
             </Row> <br />
-            <Row className="row-content">
-                I'm David, an aspiring front end web developer. I mostly 
-                use JavaScript-based technologies such as React.js and React Native. 
-                Although I specialize in front end, I am familiar with Node.js, 
-                Express, and MongoDB, allowing me to create a back end as well.
+            <Row>
+                <p className="mx-3">
+                    I'm David, an aspiring front end web developer. I mostly 
+                    use JavaScript-based technologies such as React.js and React Native. 
+                    Although I specialize in front end, I am familiar with Node.js, 
+                    Express, and MongoDB, allowing me to create a back end as well.
+                </p>
             </Row> <br />
             <Row>
-                I began teaching myself web development languages after high school 
-                on Udemy. I learned HTML and CSS, but I felt that I wanted a good structure
-                for learning code, so I ended up taking a bootcamp with NuCamp. 
-                Through it I was introduced to JavaScript and the JS technologies I 
-                previously mentioned.
+                <p className="mx-3">
+                    I began teaching myself web development languages after high school 
+                    on Udemy. I learned HTML and CSS, but I felt that I wanted a good structure
+                    for learning code, so I ended up taking a bootcamp with NuCamp. 
+                    Through it I was introduced to JavaScript and the JS technologies I 
+                    previously mentioned.
+                </p>
             </Row> <br />
             <Row>
-                I am a believer of lifelong learning and a naturally curious person, 
-                and I will always want to expand my skillset. After bootcamp, learning 
-                other languages on my own became easier. My goal is to become flexible 
-                within the tech industry, and I'm confident that my hunger for knowledge 
-                will help me in that feat.
+                <p className="mx-3">
+                    I am a believer of lifelong learning and a naturally curious person, 
+                    and I will always want to expand my skillset. After bootcamp, learning 
+                    other languages on my own became easier. My goal is to become flexible 
+                    within the tech industry, and I'm confident that my hunger for knowledge 
+                    will help me in that feat.
+                </p>
             </Row>
         </Container>
     )
