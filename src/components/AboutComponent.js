@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 function About() {
     return (
         <Element id="about">
-            <Container>
+            <Container className="container-2">
                 <Row>
                     <h1 className="mx-3">About Me</h1>
                 </Row>
@@ -32,7 +32,7 @@ function About() {
                         I am a believer of lifelong learning. As a naturally curious person, 
                         I will always want to expand my skillset. It became much easier to learn other 
                         languages after attending a bootcamp. My goal is to become flexible 
-                        within the tech industry, and I am confident that my curiousity can 
+                        within the tech industry, and I am confident that my curiosity can 
                         take me there.
                     </p>
                 </Row>

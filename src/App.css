@@ -133,16 +133,20 @@ body {
   display: inline-block;
   border: 20px solid;
   border-color: rgb(128, 128, 128) rgb(32, 32, 32);
-
 }
 
 .home {
-  margin-top: 10px;
   background-color:rgb(32, 32, 32);
 }
 
 .big-text {
   font-size: calc(40px + 4vh);
+}
+
+.home-text {
+  background-color:rgba(128, 128, 128, 0.1);
+  border: 20px solid;
+  border-color: rgb(32, 32, 32) rgb(128, 128, 128);
 }
 
 .name {
@@ -154,11 +158,11 @@ body {
 }
 
 .container-home {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 144px);
 }
 
 .container-2 {
-  min-height: 100vh;
+  min-height: calc(100vh - 144px);
 }
 
 .container-scroll {
