@@ -50,13 +50,14 @@ body {
 .nav-link {
   transition: ease-in-out .2s all;
   color: rgb(128, 128, 128);
-  border: rgba(32, 32, 32, 0) solid 3px;
+  border: rgba(32, 32, 32, 0) solid 2px;
+  cursor: pointer;
 }
 
 .nav-link:hover {
   color: rgb(128, 128, 128);
   transform: translateY(-5px);
-  border-bottom: rgb(128, 128, 128) solid 3px;
+  border-bottom: rgb(128, 128, 128) solid 2px;
 }
 
 .jumbotron {
@@ -70,7 +71,7 @@ body {
 }
 
 .header-item {
-  font-size: calc(10px + 1vw);
+  font-size: calc(16px + 0.5vw);
   white-space: nowrap;
 }
 
@@ -128,40 +129,20 @@ body {
   border-bottom:rgb(128, 128, 128) 2px solid;
 }
 
-.breadcrumb {
-  background-color:rgb(32, 32, 32);
-  font-size: large;
-  width: 100%;
-  border-radius: 0;
-}
-
-.close-btn {
-  color: inherit;
-}
-
-.close-btn:hover {
-  color: inherit;
-}
-
 .pic {
+  display: inline-block;
   border: 20px solid;
-  border-color: rgb(32, 32, 32) rgb(128, 128, 128);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-color: rgb(128, 128, 128) rgb(32, 32, 32);
+
 }
 
-.me {
+.home {
   margin-top: 10px;
   background-color:rgb(32, 32, 32);
 }
 
-.media-text {
-  background: rgb(32, 32, 32);
-  border: rgb(32, 32, 32) solid 50px;
-}
-
 .big-text {
-  font-size: calc(40px + 2vh);
+  font-size: calc(40px + 4vh);
 }
 
 .name {
@@ -170,4 +151,36 @@ body {
 
 .skill {
   margin: 5px;
+}
+
+.container-home {
+  min-height: calc(100vh - 160px);
+}
+
+.container-2 {
+  min-height: 100vh;
+}
+
+.container-scroll {
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+  min-height: calc(100vh - 80px);
+}
+
+.work {
+  display: inline-block;
+  background-color:rgb(219, 219, 219);
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+.work:hover {
+  color: inherit;
+  text-decoration: inherit;
+  background-color: rgb(184, 184, 184);
 }
