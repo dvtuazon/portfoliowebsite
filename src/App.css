@@ -188,3 +188,8 @@ body {
   text-decoration: inherit;
   background-color: rgb(184, 184, 184);
 }
+
+.btn-secondary {
+  border-radius: 0;
+  border: rgb(184, 184, 184) solid 2px;
+}

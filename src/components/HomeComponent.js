@@ -13,9 +13,17 @@ function Home() {
                 <Col xs="12" md="8" className="home-text text-center align-self-center pt-5">
                     <h1 className="big-text">Front End Engineer</h1>
                     <p>
-                        Hello there! I'm David. <br /> I specialize in JavaScript and other web technologies.
+                        Hello there! I'm David. <br /> I specialize in React and other web technologies.
                     </p>
-                    <Link to="projects" className="btn btn-dark mt-5 mb-5">See my work &rarr;</Link>
+                    <Row className="mt-5 mb-5">
+                        <Col xs="12" md={{size: 3, offset: 2}}>
+                            <Link to="projects" className="btn btn-secondary" smooth>See my work &rarr;</Link>
+                        </Col>
+                        <Col xs="12" md="2" className="text-center"> - or -</Col>
+                        <Col xs="12" md="3">
+                            <Link to="projects" className="btn btn-secondary" smooth>Contact me &rarr;</Link>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>

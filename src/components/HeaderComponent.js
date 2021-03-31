@@ -22,21 +22,21 @@ function Header() {
                         <Nav navbar className="header">
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link className="nav-link header-item text-center" to="about">
+                                    <Link className="nav-link header-item text-center" to="about" smooth>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link className="nav-link header-item text-center" to="projects">
+                                    <Link className="nav-link header-item text-center" to="projects" smooth>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link className="nav-link header-item text-center" to="resume">
+                                    <Link className="nav-link header-item text-center" to="resume" smooth>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Resume</span> /&#62;
                                     </Link>
                                 </NavItem>
