@@ -50,14 +50,12 @@ body {
 .nav-link {
   transition: ease-in-out .2s all;
   color: rgb(128, 128, 128);
-  border: rgba(32, 32, 32, 0) solid 2px;
   cursor: pointer;
 }
 
 .nav-link:hover {
   color: rgb(128, 128, 128);
   transform: translateY(-5px);
-  border-bottom: rgb(128, 128, 128) solid 2px;
 }
 
 .jumbotron {
@@ -110,10 +108,6 @@ body {
   margin-top: 100px;
 }
 
-.title {
-  padding: 10px;
-}
-
 .link {
   color: rgb(219, 219, 219);
 }
@@ -135,7 +129,7 @@ body {
   border-color: rgb(128, 128, 128) rgb(32, 32, 32);
 }
 
-.home {
+.dark-bg {
   background-color:rgb(32, 32, 32);
 }
 
@@ -158,11 +152,11 @@ body {
 }
 
 .container-home {
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 141px);
 }
 
 .container-2 {
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 79px);
 }
 
 .container-scroll {
@@ -191,5 +185,16 @@ body {
 
 .btn-secondary {
   border-radius: 0;
-  border: rgb(184, 184, 184) solid 2px;
+  border: rgb(184, 184, 184) solid 1px;
+}
+
+.title {
+  padding: 20px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

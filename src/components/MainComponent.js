@@ -3,7 +3,7 @@ import Header from './HeaderComponent';
 import Home from './HomeComponent.js';
 import Projects from './ProjectsComponent';
 import About from './AboutComponent';
-import Resume from './ResumeComponent';
+import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -17,7 +17,7 @@ function Main() {
                 <Home />
                 <About />
                 <Projects />
-                <Resume />
+                <Contact />
                 <Footer />
             </div>
         </>
