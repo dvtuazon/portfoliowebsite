@@ -45,6 +45,7 @@ body {
   background-color: rgb(46, 46, 46);
   font-family: 'Consolas';
   color: rgb(219, 219, 219);
+  overflow-x: hidden;
 }
 
 .nav-link {
