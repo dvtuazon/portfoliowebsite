@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Container } from 'reactstrap';
 import { Element } from 'react-scroll';
 
 function About() {
@@ -8,12 +7,12 @@ function About() {
         <Element id="about">
             <Container className="container-2">
                 <div className="home-text">
-                    <h1 className="title col-xs-12 col-md-4 offset-md-4 text-center">About Me</h1>
+                    <h1 className="title col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">About Me</h1>
                     <p className="mx-3">
                         My name is David Tuazon, and I am a front end developer. I
                         use JavaScript-based front end technologies such as React and React
                         Native, and I am also familiar with Node.js, Express, and MongoDB,
-                        allowing me to build a back end as well.
+                        allowing me to create a back end as well.
                         </p>
                     <br />
                     <p className="mx-3">

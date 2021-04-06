@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Breadcrumb, BreadcrumbItem, Button, 
-    Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import * as Scroll from 'react-scroll';
+import React from 'react';
+import { Container, Button, 
+    Form, FormGroup, Label, Input } from 'reactstrap';
 import { Element } from 'react-scroll';
 import emailjs from 'emailjs-com';
-import { nominalTypeHack } from 'prop-types';
 
 function Contact() {
 
@@ -24,25 +21,25 @@ function Contact() {
     return (
         <Element id="contact">
             <Container className="container-4">
-                <h1 className="title col-xs-12 col-md-4 offset-md-4 text-center">Contact Me</h1>
+                <h1 className="title col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">Contact Me</h1>
                 <Form onSubmit={sendEmail}>
                     <FormGroup className="row my-3">
-                        <Label for="subject" className="col-xs-12 col-md-1 text-left">Subject:</Label>
-                        <Input type="text" name="subject" id="subject" className="col-xs-12 col-md-5 mx-3" placeholder="Subject" />
+                        <Label for="subject" className="col-xs-12 col-md-2 text-left">Subject:</Label>
+                        <Input type="text" name="subject" id="subject" className="col-xs-12 col-md-9" placeholder="Subject" />
                     </FormGroup>
                     <FormGroup className="row my-3">
-                        <Label for="name" className="col-xs-12 col-md-1 text-left">Name:</Label>
-                        <Input type="text" name="name" id="name" className="col-xs-12 col-md-5 mx-3" placeholder="Your name" />
+                        <Label for="name" className="col-xs-12 col-md-2 text-left">Name:</Label>
+                        <Input type="text" name="name" id="name" className="col-xs-12 col-md-9" placeholder="Your name" />
                     </FormGroup>
                     <FormGroup className="row my-3">
-                        <Label for="email" className="col-xs-12 col-md-1 text-left">Email:</Label>
-                        <Input type="email" name="email" id="email" className="col-xs-12 col-md-5 mx-3" placeholder="Your email" />
+                        <Label for="email" className="col-xs-12 col-md-2 text-left">Email:</Label>
+                        <Input type="email" name="email" id="email" className="col-xs-12 col-md-9" placeholder="Your email" />
                     </FormGroup>
                     <FormGroup className="row my-3">
-                        <Label for="message" className="col-xs-12 col-md-1 text-left">Message:</Label>
-                        <Input type="textarea" rows="4" name="message" id="message" className="col-xs-12 col-md-5 mx-3" placeholder="Your message" />
+                        <Label for="message" className="col-xs-12 col-md-2 text-left">Message:</Label>
+                        <Input type="textarea" rows="4" name="message" id="message" className="col-xs-12 col-md-9" placeholder="Your message" />
                     </FormGroup>
-                    <div className="col-xs-12 col-md-6 text-right">
+                    <div className="col-xs-12 text-center">
                         <Button type="submit">Send Message</Button>
                     </div>
                 </Form>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-scroll';
 
@@ -20,8 +20,8 @@ function Footer() {
                         <Col xs="6" md={{ size: 3, offset: 6}}>
                             <h5 className="title">Socials</h5>
                             <ul className="list-unstyled">
-                                <li><a href='https://github.com/dvtuazon' target="_blank" className="link" smooth offset={-79}><i className="fa fa-github fa-fw" /> GitHub</a></li>
-                                <li><a href='https://www.linkedin.com/in/david-tuazon-60105a1a4/' target="_blank" className="link" smooth offset={-79}><i className="fa fa-linkedin fa-fw" /> LinkedIn</a></li>
+                                <li><a href='https://github.com/dvtuazon' target="_blank" rel="noopener noreferrer" className="link" smooth offset={-79}><i className="fa fa-github fa-fw" /> GitHub</a></li>
+                                <li><a href='https://www.linkedin.com/in/david-tuazon-60105a1a4/' target="_blank" rel="noopener noreferrer" className="link" smooth offset={-79}><i className="fa fa-linkedin fa-fw" /> LinkedIn</a></li>
                             </ul>
                         </Col>
                     </Row>

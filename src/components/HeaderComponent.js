@@ -1,8 +1,7 @@
-import React, { useState, useRef } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Nav, Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-import * as Scroll from 'react-scroll';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import React, { useState } from 'react';
+import { Col } from 'reactstrap';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Link } from 'react-scroll';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +9,6 @@ function Header() {
     const toggleNavbar = () => setIsOpen(!isOpen);
 
     const closeNav = () => setIsOpen(false);
-    
-    const scroll = Scroll.animateScroll;
-
-    const scrollToTop = () => scroll.scrollToTop();
 
     return (
         <>

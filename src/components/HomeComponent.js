@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-scroll';
 import profilepic from '../profilepic.jpg';
@@ -10,7 +10,7 @@ function Home() {
             <Container className="container-home dark-bg px-5" fluid>
                 <Row className="pt-5">
                     <Col xs="12" xl="4" className="text-center">
-                        <img src={profilepic} width="350" className="pic" />
+                        <img src={profilepic} width="350" className="pic" alt="profile" />
                     </Col>
                     <Col xs="12" xl="8" className="home-text text-center align-self-center pt-5">
                         <h1 className="big-text">Front End Engineer</h1>
