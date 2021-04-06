@@ -130,7 +130,7 @@ body {
 }
 
 .dark-bg {
-  background-color:rgb(32, 32, 32);
+  background-color:rgb(24, 24, 24);
 }
 
 .big-text {
@@ -156,6 +156,18 @@ body {
 }
 
 .container-2 {
+  min-height: calc(100vh - 89px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-3 {
   min-height: calc(100vh - 79px);
 }
 
@@ -189,12 +201,29 @@ body {
 }
 
 .title {
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: rgb(219, 219, 219) solid 1px;
+  border-bottom: rgb(219, 219, 219) solid 1px;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+textarea {
+  resize: none;
+}
+
+.project-pic {
+  border: 10px solid;
+  border-color: rgb(32, 32, 32) rgb(128, 128, 128);
+  transition: ease-in-out .2s all;
+}
+
+.project-pic:hover {
+  transform: scale(1.2);
+}
+
+.contact-bg {
+  background-image: url(speech-bubble.png);
+  background-repeat: no-repeat;
 }

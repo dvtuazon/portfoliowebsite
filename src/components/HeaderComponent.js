@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-import { Link } from 'react-scroll';
+import * as Scroll from 'react-scroll';
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,10 @@ function Header() {
 
     const closeNav = () => setIsOpen(false);
     
+    const scroll = Scroll.animateScroll;
+
+    const scrollToTop = () => scroll.scrollToTop();
+
     return (
         <>
             <Jumbotron fluid className="typewriter">
@@ -50,7 +55,11 @@ function Header() {
                 </Col>
                 <Col>
                     <Nav>
-                        <NavItem className="ml-auto">David Tuazon</NavItem>
+                        <NavItem className="ml-auto">
+                            <Link to="home" className="link" offset={-140} smooth>
+                                David Tuazon
+                            </Link>
+                        </NavItem>
                     </Nav>
                 </Col>
             </Navbar>
