@@ -23,7 +23,7 @@ function Home() {
                             </Col>
                             <Col xs="12" md="2" className="text-center"> - or -</Col>
                             <Col xs="12" md="3">
-                                <Link to="contact" className="btn btn-secondary" smooth>Contact me &rarr;</Link>
+                                <Link to="contact" className="btn btn-secondary" smooth offset={-89}>Contact me &rarr;</Link>
                             </Col>
                         </Row>
                     </Col>

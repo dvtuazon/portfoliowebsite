@@ -23,8 +23,8 @@ function Contact() {
 
     return (
         <Element id="contact">
-            <Container className="container-3 text-center">
-                <h1 className="title col-xs-12 col-md-4 offset-md-4">Contact Me</h1>
+            <Container className="container-4">
+                <h1 className="title col-xs-12 col-md-4 offset-md-4 text-center">Contact Me</h1>
                 <Form onSubmit={sendEmail}>
                     <FormGroup className="row my-3">
                         <Label for="subject" className="col-xs-12 col-md-1 text-left">Subject:</Label>

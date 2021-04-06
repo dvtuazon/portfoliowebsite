@@ -45,7 +45,7 @@ function Header() {
                             </Col>
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="contact" smooth offset={-79}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="contact" smooth offset={-89}>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Contact</span> /&#62;
                                     </Link>
                                 </NavItem>
