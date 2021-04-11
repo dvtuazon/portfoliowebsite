@@ -20,22 +20,22 @@ function Contact() {
 
     return (
         <Element id="contact">
-            <Container className="container-4">
+            <Container className="container-4 p-1">
                 <h1 className="title col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">Contact Me</h1>
                 <Form onSubmit={sendEmail}>
-                    <FormGroup className="row my-3">
+                    <FormGroup className="row px-3">
                         <Label for="subject" className="col-xs-12 col-md-2 text-left">Subject:</Label>
                         <Input type="text" name="subject" id="subject" className="col-xs-12 col-md-9" placeholder="Subject" />
                     </FormGroup>
-                    <FormGroup className="row my-3">
+                    <FormGroup className="row px-3">
                         <Label for="name" className="col-xs-12 col-md-2 text-left">Name:</Label>
                         <Input type="text" name="name" id="name" className="col-xs-12 col-md-9" placeholder="Your name" />
                     </FormGroup>
-                    <FormGroup className="row my-3">
+                    <FormGroup className="row px-3">
                         <Label for="email" className="col-xs-12 col-md-2 text-left">Email:</Label>
                         <Input type="email" name="email" id="email" className="col-xs-12 col-md-9" placeholder="Your email" />
                     </FormGroup>
-                    <FormGroup className="row my-3">
+                    <FormGroup className="row px-3">
                         <Label for="message" className="col-xs-12 col-md-2 text-left">Message:</Label>
                         <Input type="textarea" rows="4" name="message" id="message" className="col-xs-12 col-md-9" placeholder="Your message" />
                     </FormGroup>

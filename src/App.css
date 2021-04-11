@@ -70,7 +70,7 @@ body {
 }
 
 .header-item {
-  font-size: calc(16px + 0.5vw);
+  font-size: 20px;
   white-space: nowrap;
 }
 
@@ -127,9 +127,12 @@ body {
 }
 
 .pic {
-  display: inline-block;
+  position: relative;
+  display: block;
   border: 20px solid;
   border-color: rgb(128, 128, 128) rgb(32, 32, 32);
+  max-width: 85%;
+  height: auto;
 }
 
 .dark-bg {
@@ -146,20 +149,31 @@ body {
   border-color: rgb(32, 32, 32) rgb(128, 128, 128);
 }
 
-.name {
-  font-size: calc(6px + 4vh);
+.about-text {
+  background-color:rgba(32, 32, 32, 0.1);
+  border: 20px solid;
+  border-color: rgb(172, 172, 172) rgb(128, 128, 128);
 }
 
-.skill {
-  margin: 5px;
+.no-wrap {
+  white-space: nowrap;
 }
 
 .container-home {
-  min-height: calc(100vh - 141px);
+  min-height: calc(100vh - 135px);
+  display: flex;
+  align-items: center;
+}
+
+.center-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-2 {
-  min-height: calc(100vh - 79px);
+  min-height: calc(100vh - 74px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -171,11 +185,14 @@ body {
 }
 
 .container-3 {
-  min-height: calc(100vh - 79px);
+  min-height: calc(100vh - 74px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-4 {
-  min-height: calc(100vh - 89px);
+  min-height: calc(100vh - 74px);
 }
 
 .container-scroll {

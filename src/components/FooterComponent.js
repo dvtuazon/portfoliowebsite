@@ -11,10 +11,10 @@ function Footer() {
                         <Col xs="6" md="3">
                             <h5 className="title">Links</h5>
                             <ul className="list-unstyled">
-                                <li><Link to='home' className="link" smooth offset={-141}><i className="fa fa-home fa-fw" /> Home</Link></li>
-                                <li><Link to='about' className="link" smooth offset={-79}><i className="fa fa-info fa-fw" /> About</Link></li>
-                                <li><Link to='projects' className="link" smooth offset={-79}><i className="fa fa-briefcase fa-fw" /> Projects</Link></li>
-                                <li><Link to='contact' className="link" smooth offset={-89}><i className="fa fa-phone fa-fw" /> Contact</Link></li>
+                                <li><Link to='home' className="link" smooth offset={-135}><i className="fa fa-home fa-fw" /> Home</Link></li>
+                                <li><Link to='about' className="link" smooth offset={-73}><i className="fa fa-info fa-fw" /> About</Link></li>
+                                <li><Link to='projects' className="link" smooth offset={-73}><i className="fa fa-briefcase fa-fw" /> Projects</Link></li>
+                                <li><Link to='contact' className="link" smooth offset={-73}><i className="fa fa-phone fa-fw" /> Contact</Link></li>
                             </ul>
                         </Col>
                         <Col xs="6" md={{ size: 3, offset: 6}}>

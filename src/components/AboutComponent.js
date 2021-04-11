@@ -6,7 +6,7 @@ function About() {
     return (
         <Element id="about">
             <Container className="container-2">
-                <div className="home-text">
+                <div className="about-text">
                     <h1 className="title col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">About Me</h1>
                     <p className="mx-3">
                         My name is David Tuazon, and I am a front end developer. I

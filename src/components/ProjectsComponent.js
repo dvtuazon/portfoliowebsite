@@ -7,8 +7,8 @@ function Projects() {
 
     return (
         <Element id="projects">
-            <Container className="dark-bg container-3" fluid>
-                <Container className="text-center p-0">
+            <Container className="dark-bg container-2" fluid>
+                <Container className="text-center">
                     <h1 className="title col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">Projects</h1>
                     <Row>
                         <Col xs="12" md="4">

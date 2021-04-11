@@ -14,7 +14,7 @@ function Header() {
         <>
             <Jumbotron fluid className="typewriter">
                 <Col xs="12" lg="8">
-                <h1 className="typing-erase pl-2">
+                <h1 className="typing-erase">
                     Lifelong learning
                 </h1>
                 </Col>
@@ -26,21 +26,21 @@ function Header() {
                         <Nav navbar className="header">
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="about" smooth offset={-79}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="about" smooth offset={-73}>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="projects" smooth offset={-79}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="projects" smooth offset={-73}>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
                             <Col xs="12" md="4">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="contact" smooth offset={-89}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="contact" smooth offset={-73}>
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Contact</span> /&#62;
                                     </Link>
                                 </NavItem>
@@ -51,7 +51,7 @@ function Header() {
                 <Col>
                     <Nav>
                         <NavItem className="ml-auto">
-                            <Link to="home" className="link" offset={-140} smooth>
+                            <Link to="home" className="link" offset={-135} smooth>
                                 David Tuazon
                             </Link>
                         </NavItem>
