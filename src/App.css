@@ -152,7 +152,7 @@ body {
 .about-text {
   background-color:rgba(32, 32, 32, 0.1);
   border: 20px solid;
-  border-color: rgb(172, 172, 172) rgb(128, 128, 128);
+  border-color: rgb(32, 32, 32) rgb(128, 128, 128);
 }
 
 .no-wrap {
@@ -186,8 +186,13 @@ body {
 
 .container-3 {
   min-height: calc(100vh - 74px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
