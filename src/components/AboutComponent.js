@@ -26,7 +26,7 @@ function About() {
                     <p className="px-3">
                         I am good at picking up new concepts, identifying patterns, and integrating it 
                         into my work. As a naturally curious person, I am a believer of lifelong learning
-                        and will always want to expand my skillset. My goal is to become flexible engineer
+                        and will always want to expand my skillset. My goal is to become a flexible engineer
                         within the tech industry, and I am confident that my curiosity can
                         take me there.
                     </p>
