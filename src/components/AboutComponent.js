@@ -19,7 +19,7 @@ function About() {
                         I began teaching myself web development languages on Udemy after being 
                         introduced to them in high school. I learned HTML and CSS, but I felt 
                         that I wanted a good structure for learning programming, so I decided 
-                        to a bootcamp with NuCamp. Through it I was introduced to JavaScript 
+                        to attend a bootcamp with NuCamp. Through that I was introduced to JavaScript 
                         and the MERN stack.
                         </p>
                     <br />
