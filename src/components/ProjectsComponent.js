@@ -47,9 +47,7 @@ function Projects() {
                         <Col xs="12" md="4">
                             <a href="https://github.com/dvtuazon/weatherapp" target="_blank" rel="noopener noreferrer" className="link">
                                 <Card>
-                                    <div className="cropper">
-                                        <CardImg src={process.env.PUBLIC_URL + '/images/weatherapp.png'} width="318" height="180" alt="nucamp react native project" className="project-pic" />
-                                    </div>
+                                    <CardImg src={process.env.PUBLIC_URL + '/images/weatherapp.png'} width="318" height="180" alt="nucamp react native project" className="project-pic" />
                                     <CardBody>
                                         <CardTitle tag="h5">Weather Search App</CardTitle>
                                         <CardSubtitle tag="h6" className="text-muted">React</CardSubtitle>
