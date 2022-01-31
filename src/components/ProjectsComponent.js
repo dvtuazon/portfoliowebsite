@@ -45,18 +45,18 @@ function Projects() {
                             </a>
                         </Col>
                         <Col xs="12" md="4">
-                            <a href="https://github.com/dvtuazon/reactnative" target="_blank" rel="noopener noreferrer" className="link">
+                            <a href="https://github.com/dvtuazon/weatherapp" target="_blank" rel="noopener noreferrer" className="link">
                                 <Card>
                                     <div className="cropper">
-                                        <CardImg src={process.env.PUBLIC_URL + '/images/nucampnative.png'} width="318" height="180" alt="nucamp react native project" className="project-pic" />
+                                        <CardImg src={process.env.PUBLIC_URL + '/images/weatherapp.png'} width="318" height="180" alt="nucamp react native project" className="project-pic" />
                                     </div>
                                     <CardBody>
-                                        <CardTitle tag="h5">NuCamp React Native App</CardTitle>
-                                        <CardSubtitle tag="h6" className="text-muted">React Native</CardSubtitle>
+                                        <CardTitle tag="h5">Weather Search App</CardTitle>
+                                        <CardSubtitle tag="h6" className="text-muted">React</CardSubtitle>
                                         <CardText>
-                                            The mobile development project from NuCamp. Uses stack navigation, 
-                                            drawer navigation, favorites, comments, register/login functionality, 
-                                            and camera/gallery usage.
+                                            A simple single-page front end web application built using React.
+                                            The app uses Fetch to get weather data from the OpenWeatherMap API. 
+                                            It includes error handling and loading functionality.
                                         </CardText>
                                     </CardBody>
                                 </Card>
