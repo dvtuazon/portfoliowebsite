@@ -248,6 +248,9 @@ textarea {
 
 .cropper {
   max-height: 180px;
+}
+
+.overflow {
   overflow-y: scroll;
 }
 
