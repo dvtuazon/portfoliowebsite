@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 import profilepic from '../profilepic.jpg';
-import { Element } from 'react-scroll';
 
 function Home() {
     return (

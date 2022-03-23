@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Col } from 'reactstrap';
-import { Nav, Navbar, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Col, Nav, Navbar, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { Link } from 'react-scroll';
 
 function Header() {
