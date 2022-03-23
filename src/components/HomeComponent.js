@@ -19,13 +19,13 @@ function Home() {
                         </p>
                         <Row className="mt-5 mb-5">
                             <Col xs="12" lg="5">
-                                <Link to="projects" className="btn btn-secondary no-wrap" smooth offset={-79}>My Work &rarr;</Link>
+                                <Link to="projects" className="btn btn-secondary no-wrap" smooth offset={-73}>My Work &rarr;</Link>
                             </Col>
                             <Col xs="12" lg="2">
                                 <p className="my-1">or</p>
                             </Col>
                             <Col xs="12" lg="5">
-                                <Link to="contact" className="btn btn-secondary no-wrap" smooth offset={-89}>Contact Me &rarr;</Link>
+                                <Link to="contact" className="btn btn-secondary no-wrap" smooth offset={-73}>Contact Me &rarr;</Link>
                             </Col>
                         </Row>
                     </Col>

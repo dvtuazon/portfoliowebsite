@@ -14,7 +14,9 @@ function Projects() {
                         <Col xs="12" md="4">
                             <a href="https://github.com/dvtuazon/nucampsitefrontend" target="_blank" rel="noopener noreferrer" className="link">
                                 <Card>
-                                    <CardImg src={process.env.PUBLIC_URL + '/images/nucamppic.png'} width="318" height="180" alt="nucamp react project" />
+                                    <div className='cropper'>
+                                        <CardImg src={process.env.PUBLIC_URL + '/images/nucamppic.png'} width="318" height="180" alt="nucamp react project" />
+                                    </div>
                                     <CardBody>
                                         <CardTitle tag="h5">NuCamp Course Website</CardTitle>
                                         <CardSubtitle tag="h6" className="text-muted">MERN Stack</CardSubtitle>
@@ -47,7 +49,9 @@ function Projects() {
                         <Col xs="12" md="4">
                             <a href="https://daves-weather-search.netlify.app" target="_blank" rel="noopener noreferrer" className="link">
                                 <Card>
-                                    <CardImg src={process.env.PUBLIC_URL + '/images/weatherapp.png'} width="318" height="180" alt="weather search react project" className="project-pic" />
+                                    <div className='cropper'>
+                                        <CardImg src={process.env.PUBLIC_URL + '/images/weatherapp.png'} width="318" height="180" alt="weather search react project" />
+                                    </div>
                                     <CardBody>
                                         <CardTitle tag="h5">Weather Search App</CardTitle>
                                         <CardSubtitle tag="h6" className="text-muted">React</CardSubtitle>
