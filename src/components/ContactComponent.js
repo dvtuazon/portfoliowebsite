@@ -20,44 +20,46 @@ function Contact() {
 
     return (
         <>
-            <Container className="container-vh bg px-5" fluid>
-                <Fade in>
-                    <h1 className="text-center title">Contact Me</h1>
-                </Fade>
-                <Form onSubmit={sendEmail} className="py-4">
-                    <Stagger in>
-                        <FadeTransform in>
+            <Fade in>
+                <Container className="container-vh bg px-5" fluid>
+                    <Fade in>
+                        <h1 className="text-center title">Contact Me</h1>
+                    </Fade>
+                    <Form onSubmit={sendEmail} className="py-4">
+                        <Stagger in>
+                            <FadeTransform in>
+                                <FormGroup className="row px-3">
+                                    <Label for="subject" className="col-xs-12 col-md-1 offset-md-1">Subject:</Label>
+                                    <Input type="text" name="subject" id="subject" className="col-xs-12 col-md-9" placeholder="Subject" />
+                                </FormGroup>
+                            </FadeTransform>
+                            <FadeTransform in>
+                                <FormGroup className="row px-3">
+                                    <Label for="name" className="col-xs-12 col-md-1 offset-md-1">Name:</Label>
+                                    <Input type="text" name="name" id="name" className="col-xs-12 col-md-9" placeholder="Your name" />
+                                </FormGroup>
+                            </FadeTransform>
+                            <FadeTransform in>
+                                <FormGroup className="row px-3">
+                                    <Label for="email" className="col-xs-12 col-md-1 offset-md-1">Email:</Label>
+                                    <Input type="email" name="email" id="email" className="col-xs-12 col-md-9" placeholder="Your email" />
+                                </FormGroup>
+                            </FadeTransform>
+                            <FadeTransform in>
                             <FormGroup className="row px-3">
-                                <Label for="subject" className="col-xs-12 col-md-1 offset-md-1">Subject:</Label>
-                                <Input type="text" name="subject" id="subject" className="col-xs-12 col-md-9" placeholder="Subject" />
+                                <Label for="message" className="col-xs-12 col-md-1 offset-md-1">Message:</Label>
+                                <Input type="textarea" rows="4" name="message" id="message" className="col-xs-12 col-md-9" placeholder="Your message" />
                             </FormGroup>
-                        </FadeTransform>
-                        <FadeTransform in>
-                            <FormGroup className="row px-3">
-                                <Label for="name" className="col-xs-12 col-md-1 offset-md-1">Name:</Label>
-                                <Input type="text" name="name" id="name" className="col-xs-12 col-md-9" placeholder="Your name" />
-                            </FormGroup>
-                        </FadeTransform>
-                        <FadeTransform in>
-                            <FormGroup className="row px-3">
-                                <Label for="email" className="col-xs-12 col-md-1 offset-md-1">Email:</Label>
-                                <Input type="email" name="email" id="email" className="col-xs-12 col-md-9" placeholder="Your email" />
-                            </FormGroup>
-                        </FadeTransform>
-                        <FadeTransform in>
-                        <FormGroup className="row px-3">
-                            <Label for="message" className="col-xs-12 col-md-1 offset-md-1">Message:</Label>
-                            <Input type="textarea" rows="4" name="message" id="message" className="col-xs-12 col-md-9" placeholder="Your message" />
-                        </FormGroup>
-                        </FadeTransform>
-                        <FadeTransform in>
-                            <div className="col-xs-12 text-center">
-                                <Button type="submit">Send Message</Button>
-                            </div>
-                        </FadeTransform>
-                    </Stagger>
-                </Form>
-            </Container>
+                            </FadeTransform>
+                            <FadeTransform in>
+                                <div className="col-xs-12 text-center">
+                                    <Button type="submit">Send Message</Button>
+                                </div>
+                            </FadeTransform>
+                        </Stagger>
+                    </Form>
+                </Container>
+            </Fade>
         </>
     )
 }
