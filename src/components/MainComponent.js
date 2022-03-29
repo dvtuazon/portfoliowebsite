@@ -5,16 +5,19 @@ import Projects from './ProjectsComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
+import { Routes, Route } from 'react-router-dom';
 
 function Main() {
 
     return (
         <>
             <Header />
-            <Home />
-            <About />
-            <Projects />
-            <Contact />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
+            </Routes>
             <Footer />
         </>
     )

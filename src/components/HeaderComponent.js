@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Nav, Navbar, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,23 +23,30 @@ function Header() {
                     <NavbarToggler onClick={toggleNavbar} className="navbar-dark" />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav navbar className="header">
-                            <Col xs="12" md="4">
+                        <Col xs="12" md="3">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="about" smooth offset={-73}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="/">
+                                        &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Home</span> /&#62;
+                                    </Link>
+                                </NavItem>
+                            </Col>
+                            <Col xs="12" md="3">
+                                <NavItem>
+                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="about">
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>About</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
-                            <Col xs="12" md="4">
+                            <Col xs="12" md="3">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="projects" smooth offset={-73}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="projects">
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Projects</span> /&#62;
                                     </Link>
                                 </NavItem>
                             </Col>
-                            <Col xs="12" md="4">
+                            <Col xs="12" md="3">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-center" to="contact" smooth offset={-73}>
+                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="contact">
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Contact</span> /&#62;
                                     </Link>
                                 </NavItem>
@@ -50,7 +57,7 @@ function Header() {
                 <Col>
                     <Nav>
                         <NavItem className="ml-auto">
-                            <Link to="home" className="link" offset={-135} smooth>
+                            <Link to="/" className="link">
                                 David Tuazon
                             </Link>
                         </NavItem>

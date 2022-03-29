@@ -1,36 +1,45 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link, Element } from 'react-scroll';
-import profilepic from '../profilepic.jpg';
+import { Link } from 'react-router-dom';
+import { Fade, Stagger, FadeTransform } from 'react-animation-components';
 
 function Home() {
     return (
-        <Element id="home">
-            <Container className="container-home dark-bg" fluid>
-                <Row>
-                    <Col xs="12" md="4">
-                        <img src={profilepic} className="pic mx-auto" alt="profile" />
-                    </Col>
-                    <Col xs="12" md="8" className="center-home home-text text-center">
-                        <h1 className="big-text pt-5">Front End Engineer</h1>
-                        <p>
-                            Hello there! I'm David. <br /> I use React and other web technologies.
-                        </p>
-                        <Row className="mt-5 mb-5">
-                            <Col xs="12" lg="5">
-                                <Link to="projects" className="btn btn-secondary no-wrap" smooth offset={-73}>My Work &rarr;</Link>
-                            </Col>
-                            <Col xs="12" lg="2">
-                                <p className="my-1">or</p>
-                            </Col>
-                            <Col xs="12" lg="5">
-                                <Link to="contact" className="btn btn-secondary no-wrap" smooth offset={-73}>Contact Me &rarr;</Link>
-                            </Col>
-                        </Row>
+        <>
+            <Container className="container-vh center bg" fluid>
+                <Row className='justify-content-center'>
+                    <Col xs="12" md="10" className="center-home home-text text-center">
+                        <Stagger in>
+                            <Fade in>
+                                <h1 className="big-text pt-5">Front End Engineer</h1>
+                            </Fade>
+                            <Fade in>
+                                <p>
+                                    Hello there! I'm David. <br /> I use JavaScript to build fast, responsive web applications.
+                                </p>
+                            </Fade>
+                            <FadeTransform
+                                in
+                                transformProps={{
+                                    exitTransform: 'translateY(50%)'
+                                }}>
+                                <Row className="mt-5 mb-5">
+                                    <Col xs="12" md={{ size: 3, offset: 2 }}>
+                                        <Link to="projects" className="btn btn-secondary no-wrap">My Work &rarr;</Link>
+                                    </Col>
+                                    <Col xs="12" md="2">
+                                        <p className="my-1">or</p>
+                                    </Col>
+                                    <Col xs="12" md="3">
+                                        <Link to="contact" className="btn btn-secondary no-wrap">Contact Me &rarr;</Link>
+                                    </Col>
+                                </Row>
+                            </FadeTransform>
+                        </Stagger>
                     </Col>
                 </Row>
             </Container>
-        </Element>
+        </>
     );
 }
 
