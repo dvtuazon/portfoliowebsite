@@ -25,7 +25,7 @@ function Header() {
                         <Nav navbar className="header">
                         <Col xs="12" md="3">
                                 <NavItem>
-                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="/">
+                                    <Link onClick={closeNav} className="nav-link header-item text-left" to="/portfoliowebsite">
                                         &#60;<span style={{ color: 'rgb(54, 190, 150)'}}>Home</span> /&#62;
                                     </Link>
                                 </NavItem>
@@ -57,7 +57,7 @@ function Header() {
                 <Col>
                     <Nav>
                         <NavItem className="ml-auto">
-                            <Link to="/" className="link">
+                            <Link to="/portfoliowebsite" className="link">
                                 David Tuazon
                             </Link>
                         </NavItem>
